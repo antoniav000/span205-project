@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -57,5 +57,91 @@ section h2 {
 .image-description p {
     max-width: 600px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center; 
+}
+
+.image-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.image-description img {
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.image-description p {
+    margin: 0;
+    flex: 1; 
+    text-align: left; 
+}*/
+
 
