@@ -6,7 +6,7 @@
   "scripts": {
     "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p build && cp -r * build/"
+    "build": "mkdir -p build && rsync -av --exclude='build' ./ build/"
   },
   "keywords": [],
   "author": "",
