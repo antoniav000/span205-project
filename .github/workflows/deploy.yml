@@ -3,31 +3,30 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger deployment when pushing to the main branch
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository content
-      uses: actions/checkout@v3
-      with:
-        lfs: true  # Ensures LFS files are fetched
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
-        node-version: '14'  # Specify the Node.js version
+        node-version: '14'  # Set your desired Node version
 
     - name: Install dependencies
       run: npm install
 
     - name: Build the project
-      run: npm run build
+      run: npm run build  # This will generate the build folder
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4.2.1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .  # Adjust to your build output directory
+        branch: gh-pages  # The branch where the site will be deployed
+        folder: build  # The folder to deploy (this should be your build directory)
+
