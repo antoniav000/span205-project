@@ -25,7 +25,7 @@ jobs:
       run: npm run build  # This will generate the build folder
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.2.1
+      uses: JamesIves/github-pages-deploy-action@v4.3.1 
       with:
         branch: gh-pages  # The branch where the site will be deployed
         folder: build  # The folder to deploy (this should be your build directory)
