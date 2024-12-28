@@ -164,11 +164,16 @@ a {
 
 .grid-container {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);  /* Defines 3 columns */
-    gap: 30px;  /* Gap between the grid items */
+    gap: 20px;  /* Gap between the grid items */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+    position: relative;
 }
 
 .grid-container img {
@@ -180,5 +185,24 @@ a {
 
 .grid-container img:hover {
     transform: scale(1.05);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    width: 90%;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.grid-item:hover .description {
+    opacity: 1;
 }
 
