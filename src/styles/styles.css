@@ -123,6 +123,10 @@ h2 {
     background-color: #ffecdc;
 }
 
+.photography-background {
+    background-color:#142e4c;
+}
+
 a {
     color: aqua; /* Replace with your preferred color */
   }
@@ -142,5 +146,39 @@ a {
 .fade-in {
     opacity: 0; /* Ensure the element is initially hidden */
     animation: fadeIn 2s forwards; /* Apply the animation */
+}
+
+/* styles.css */
+
+/* Grid-specific styles */
+.body1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Defines 3 columns */
+    gap: 30px;  /* Gap between the grid items */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container img {
+    width: 90%;  /* Makes images responsive */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
 }
 
