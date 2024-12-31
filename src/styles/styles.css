@@ -1,10 +1,11 @@
+/* Body formatting */
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #142e4c;
 }
-
+/* Header formatting */
 header {
     background-color: #0E627F;
     color: white;
@@ -55,6 +56,44 @@ h3 {
     text-align:center;
 }
 
+
+
+/* Formatting for two column image sections */
+
+.two-column-section {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-pair {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-pair img {
+    width: 25%;
+    border-radius: 3.5%;
+    height: auto;
+}
+
+.two-column-section p {
+    max-width: 600px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: lightgray;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+/* Formatting for one-column image sections */
+
 .image-description {
     display: flex;
     flex-direction: column;
@@ -88,6 +127,8 @@ h3 {
     padding-top: 1%;
     padding-bottom: 3%;
 }
+
+/* Formatting for citations page */
 
 .citations {
     font-family: 'Times New Roman', Times, serif;
@@ -133,14 +174,16 @@ h3 {
     background-color:#142e4c;
 }
 
-a {
-    color: aqua; /* Replace with your preferred color */
-  }
+/* Formatting for links */
 
-  a:hover {
-    color: pink; /* Replace with your hover color */
-    text-decoration: underline; /* Optional: Adds underline on hover */
-  }
+a {
+    color: aqua; /* Links are aqua */
+}
+
+a:hover {
+    color: pink;
+    text-decoration: underline; /* Links are pink and underlined when hovered over */
+}
 
 /* Define the fade-in animation */
 @keyframes fadeIn {
@@ -154,7 +197,10 @@ a {
     animation: fadeIn 2s forwards; /* Apply the animation */
 }
 
-/* styles.css */
+
+
+
+/* CSS Formatting for Photography Page (not inlcuded on site yet) */
 
 .photography-container {
     display: flex;
