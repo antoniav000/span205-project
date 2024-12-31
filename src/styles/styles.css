@@ -79,6 +79,7 @@ h3 {
     width: 22%;
     border-radius: 3.5%;
     height: auto;
+    border: 1px solid #ddd;
 }
 
 .two-column-section p {
