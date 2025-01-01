@@ -38,6 +38,7 @@ main h1 {
 }
 
 main p {
+    align-items: center;
     text-align:center;
 }
 
@@ -54,6 +55,18 @@ h2 {
 h3 {
     color: white;
     text-align:center;
+}
+
+.title-page-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.title-page-description p {
+    max-width: 1000px;
+    color:darkslategrey;
 }
 
 /* Formatting for two column image sections */
